@@ -18,15 +18,15 @@ export default{
    name: 'AddTodo',
    data(){
        return{
-           title: ''
+           title: '',
+           
        }
    },
    methods: {
        addTodo(e){
            e.preventDefault();
            const newTodo = {
-               id: 6,
-          
+                    id:Math.floor(Math.random()*100000),
                title: this.title,
                completed: false,
            }
